@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuteDude - HTML Learning Demo Page</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>TuteDude – 01: HTML Learning Demo Page</h1>
+        <p><em>Level up your career with expert mentorship & internships for <strong>FREE</strong></em></p>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About TD</a></li>
+                <li><a href="#menu">Our Menu</a></li>
+                <li><a href="#trivia">Taco Trivia</a></li>
+                <li><a href="#extras">Extras</a></li>
+                <li><a href="#feedback">Feedback Form</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <figure>
+            <img src="https://media.istockphoto.com/id/1430849921/photo/order-of-tacos-closeup.jpg?s=1024x1024&w=is&k=20&c=q-8fdSVj_C8Ek2Y8mBS2n2LM03BWdpnY_pXcJRuA7w0=" alt="Order of delicious tacos close-up" width="600">
+            <figcaption>TuteDude and a Drink – Fresh tacos ready to enjoy while learning HTML! 🌮🥤</figcaption>
+        </figure>
+
+        <figure>
+            <!-- Video placeholder: free sample video (replace src if you have a better one) -->
+            <video controls width="600">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <figcaption>Quick demo: How TuteDude makes learning HTML fun and tasty!</figcaption>
+        </figure>
+    </header>
+
+    <main>
+
+        <!-- About Section -->
+        <section id="about">
+            <article>
+                <h2>About TD</h2>
+                <p>TD was founded in <time datetime="2021">2021</time>. This demo project was created by TuteDude for learning all major <abbr title="HyperText Markup Language">HTML</abbr> tags 😊.</p>
+
+                <blockquote>
+                    <p>"Tacos and code – the perfect combination to master HTML!"</p>
+                    <cite>— TuteDude Team</cite>
+                </blockquote>
+            </article>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu">
+            <h2>TuteDude Complete Taco Menu</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Type</th>
+                        <th>Small Portion</th>
+                        <th>Large Portion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Classic</td>
+                        <td>Beef Taco</td>
+                        <td>₹99</td>
+                        <td>₹179</td>
+                    </tr>
+                    <tr>
+                        <td>Chicken Taco</td>
+                        <td>₹109</td>
+                        <td>₹199</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Veggie</td>
+                        <td>Paneer Taco</td>
+                        <td>₹119</td>
+                        <td>₹219</td>
+                    </tr>
+                    <tr>
+                        <td>Veg Supreme</td>
+                        <td>₹129</td>
+                        <td>₹239</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Prices inclusive of taxes • Free delivery on orders above ₹500</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <!-- Nested table for nutrition info -->
+            <h3>Nutrition Info (Beef Taco - Small)</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nutrient</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Calories</td><td>280 kcal</td></tr>
+                    <tr><td>Protein</td><td>15g</td></tr>
+                    <tr><td>Carbs</td><td>22g</td></tr>
+                    <tr><td>Fat</td><td>14g</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Trivia Section -->
+        <section id="trivia">
+            <h2>Taco Trivia</h2>
+            <aside>
+                <details>
+                    <summary>Did you know?</summary>
+                    <p>Tacos originated in Mexico over 1000 years ago! 🌮</p>
+                </details>
+
+                <details>
+                    <summary>Fun Fact</summary>
+                    <p>The word "taco" means "plug" or "wad" in Mexican Spanish — like plugging a tortilla with delicious filling!</p>
+                </details>
+
+                <details>
+                    <summary>World Record</summary>
+                    <p>The largest taco ever made weighed over 900 kg!</p>
+                </details>
+            </aside>
+        </section>
+
+        <!-- Extras Section -->
+        <section id="extras">
+            <h2>Extras</h2>
+
+            <h3>Background Sound Example (Taco Theme Music - placeholder)</h3>
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>Video Example (Learning Snack Break)</h3>
+            <video controls width="400">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <!-- Feedback Form -->
+        <section id="feedback">
+            <h2>Feedback Form</h2>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>User Feedback</legend>
+
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="rating">How would you rate this page?</label><br>
+                    <select id="rating" name="rating">
+                        <option value="excellent">Excellent 🌮🌮🌮🌮🌮</option>
+                        <option value="good">Good</option>
+                        <option value="average">Average</option>
+                        <option value="poor">Poor</option>
+                    </select><br><br>
+
+                    <label for="comments">Comments:</label><br>
+                    <textarea id="comments" name="comments" rows="5" cols="40"></textarea><br><br>
+
+                    <input type="submit" value="Submit Feedback">
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <address>
+            Contact us:<br>
+            TuteDude Learning Platform<br>
+            Email: support@tutedude.com<br>
+            Website: <a href="https://www.tutedude.com">www.tutedude.com</a>
+        </address>
+
+        <p>© <time datetime="2026">2026</time> TuteDude. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
